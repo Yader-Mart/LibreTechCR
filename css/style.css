@@ -1,0 +1,783 @@
+/* ESTE PROYECTO SE ESTA CREANDO CON UN ENFOQUE DE MOVILFIRTS, POR LO CUAL SE INICIA DE LA VISUALIZACION DE MOVIL HACIA ARRIBA, TODOS LOS ESTILOS ESTAN PENSADOS EN MOVIL*/
+
+
+/* -----------------------
+   ESTILOS GENERALES DE LA PAGINA
+   ----------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem -> 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* -----------------------
+   ESTILOS GLOBALES DE LA PAGINA
+   ----------------------*/
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* -----------------------
+   UTILIDADES DE LA PAGINA
+   ----------------------*/
+
+.centrar-texto {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/* botones */
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    flex: 0 0 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #270181;
+}
+
+.btn-secundario {
+    background-color: #3C8500;
+    /* ir a los media queries */
+}
+
+
+/* estilos del Grid */
+
+
+/* -----------------------
+   ESTILOS DEL HEADER 
+   ----------------------*/
+
+.site-header {
+    background-image: url(../mutimedia/imagenes/gaming-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+    opacity: 0.9;
+}
+
+.site-header a {
+    background-color: rgba(0, 0, 0, 0.52);
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.site-header h1 {
+    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(2, 44, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+/* navegacion texto */
+
+.navegacion a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+/* header texto */
+
+.texto-header {
+    background-color: white;
+    text-align: center;
+    margin-top: 5rem;
+    opacity: 1;
+    backface-visibility: visible;
+}
+
+.texto-header p {
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.texto-header h2 {
+    padding: 0 10%;
+    font-size: 2.5rem;
+}
+
+
+/* -----------------------
+   ESTILOS DE CONTENIDO PRINCIPAL DEL CAFE
+   ----------------------*/
+
+.contenido-principal {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog,
+.cursos {
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%; */
+    flex: 0 0 100%;
+    /* revisar contenedor y el width */
+}
+
+.cursos {
+    /* cambiar el orden de los articulo sin cambiar el html, esto se hace con flexbox */
+    order: -1;
+}
+
+
+/* esta parte es opcional por si quiere ver el diseño de otra forma  */
+
+
+/* -----------------------
+   OPCIONAL OPCIONAL
+   ----------------------*/
+
+.entrada-articulos {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-articulos:last-of-type {
+    border: none;
+}
+
+
+/* trabajamos con el ASIDE */
+
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.curso {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+    /* vamos a la linea 335 */
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+.curso p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso p span {
+    font-weight: 400;
+    /* ver cambios en el h2 */
+    /* ir a utilidades a trabajar con los botones */
+}
+
+.curso p.descripcion {
+    font-weight: 400;
+    /* vamnos a la linea 212 */
+}
+
+
+/* -----------------------
+   ESTILOS DEL FOOTER DEL CAFE
+   ----------------------*/
+
+.site-footer {
+    background-color: rgba(1, 97, 187, 0.767);
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+.site-footer p {
+    font-weight: 700;
+    color: white;
+    /* vamos a navegacion */
+}
+
+.name-logo a {
+    text-decoration: none;
+}
+
+.site-footer .barra {
+    display: inline-block;
+}
+
+.copy-right {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------- WCAG ---------------------------------- */
+
+.flex-footer {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.flex-footer div:nth-of-type(1) {
+    order: 1;
+}
+
+.flex-footer div:nth-of-type(2) {
+    order: 3;
+}
+
+.flex-footer div:nth-of-type(3) {
+    order: 2;
+}
+
+.flex-footer div:nth-of-type(4) {
+    order: 4;
+}
+
+.navegacion-footer a,
+.wcag-container a p,
+.wcag-container a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 0.5rem;
+    display: block;
+}
+
+.navegacion-footer a {
+    font-size: 1.8rem;
+}
+
+.wcag-logo-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wcag-logo-1 a {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.flex-footer .wcag-container figure img {
+    width: 60%;
+}
+
+.wcag-logo-1 a:nth-of-type(1) figure img {
+    margin-left: 40%;
+}
+
+.wcag-logo-1 a:nth-of-type(2) figure img {
+    margin-right: 40%;
+}
+
+.wcag-logo-1 a {
+    flex-basis: calc(50% - 2rem);
+}
+
+@media (min-width:768px) {
+    .flex-footer {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .flex-footer div:nth-of-type(1) {
+        order: 1;
+    }
+    .flex-footer div:nth-of-type(2) {
+        order: 2;
+    }
+    .flex-footer div:nth-of-type(3) {
+        order: 3;
+    }
+    .flex-footer,
+    .wcag-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .flex-footer .name-logo {
+        flex-basis: calc(5% - 2rem);
+    }
+    .name-logo p {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .flex-footer .wcag-container {
+        flex-basis: calc(45% - 2rem);
+    }
+    .flex-footer .wcag-container figure {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .flex-footer .wcag-container figure img {
+        width: 100%;
+    }
+    .wcag-logo-1 a {
+        flex-basis: calc(100% - 2rem);
+    }
+    .wcag-logo-1 a:nth-of-type(1) figure img {
+        margin-left: 0%;
+    }
+    .wcag-logo-1 a:nth-of-type(2) figure img {
+        margin-right: 0%;
+    }
+    .flex-footer .menu-footer {
+        flex-basis: calc(40% - 2rem);
+    }
+    .flex-footer .menu-footer .navegacion-footer a {
+        display: inline-block;
+    }
+    .wcag-logo-1 {
+        flex-basis: calc(30% - 1rem);
+    }
+    .wcag-logo-2 {
+        flex-basis: calc(60% - 0rem);
+    }
+}
+
+
+/* 
+@media (min-width:768px) {
+    .flex-footer,
+    .site-footer .barra {
+        display: flex;
+        justify-content: space-between;
+    }
+    .name-logo {
+        flex: calc(2fr - 2rem);
+    }
+    .wcag-container {
+        flex: calc(1fr - 2rem);
+    }
+    .menu-footer {
+        flex: 0 0 calc(5fr - 2rem);
+    }
+    .menu-footer .navegacion a {
+        padding: 0;
+        margin: 0;
+        display: inline;
+        font-size: 1.5rem;
+    }
+    .wcag-logo figure {
+        object-fit: cover;
+        width: 100%;
+    }
+} */
+
+
+/* -----------------------
+   ESTILOS DEL SiteMap
+   ----------------------*/
+
+.container-list-map {
+    width: 100%;
+    margin: 0% 9%;
+}
+
+.container-list-map ol li::marker {
+    color: red;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.container-list-map a.list-map {
+    text-decoration: none;
+    list-style: circle;
+    color: black;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-list-map {
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.list-map li {
+    font-size: 2rem;
+}
+
+
+/* vamos media querie de MAIN */
+
+
+/* -----------------------
+   ESTILOS de Terminos de Uso del sitio Web
+   ----------------------*/
+
+.contenedor-terminos ol {
+    width: 80%;
+    margin: 0% 10%;
+    display: block;
+}
+
+.contenedor-terminos p {
+    font-size: 1.5rem;
+    font-weight: 480;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0.5rem;
+    margin: 1rem;
+    max-width: max-content;
+}
+
+.contenedor-terminos p a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.contenedor-terminos h1,
+.contenedor-terminos h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contenedor-terminos h3 li,
+.contenedor-terminos h4 li {
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    list-style: circle;
+}
+
+.contenedor-terminos h3 li::marker,
+.contenedor-terminos h4 li::marker {
+    color: red;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-terminos p {
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+    .contenedor-terminos h1,
+    .contenedor-terminos h2 {
+        font-size: 3.4rem;
+    }
+}
+
+
+/* vamos a la linea 233 */
+
+
+/* -----------------------
+   ESTILOS DEL SECTION DE CONTACTENOS
+   ----------------------*/
+
+.formulario-contacto {
+    background-color: rgb(0, 0, 0);
+    padding: 5rem;
+    /* vamos al media queries de gris linea 338 */
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+
+/* vamos a la linea 340 */
+
+
+/* -----------------------
+   MEDIA QUERIES HEADER
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+        background-color: rgb(0, 0, 0);
+        padding: 1rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+    .texto-header {
+        margin-top: 15rem;
+    }
+}
+
+
+/* -----------------------
+   MEDIA QUERIES CONTENIDO PRINCIPAL DEL CAFE
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+    .blog {
+        flex-basis: 66.6%;
+        order: -1;
+    }
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+    }
+}
+
+
+/* media queries de los botones */
+
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* -----------------------
+   MEDIA QUERIES MAIN
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-4 {
+        flex-basis: calc(33.3% - 2rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex-basis: calc(33.3% - 2rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.6% - 1rem);
+    }
+    /* vamos al grid de este media queries */
+    /* vamos al media querie de abajo */
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -62.5%;
+        height: max-content;
+    }
+    .formulario-contacto .enviar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* vamos a los estilos del contactos */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                           Productos -- Articulos                           */
+
+
+/* -------------------------------------------------------------------------- */
+
+.contenedor h4 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.tres-columnas h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.product a {
+    color: red;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product img {
+    width: fit-content;
+    height: 25rem;
+}
+
+@media (min-width:768px) {
+    .texto-header {
+        padding: 0 10%;
+        font-size: 10px;
+    }
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .product {
+        flex-basis: calc(33.3% - 2rem);
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   ENTRADA                                  */
+
+
+/* -------------------------------------------------------------------------- */
+
+.modal-contenido {
+    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(2, 44, 235));
+    width: 70%;
+    height: max-content;
+    padding: 10px 20px;
+    margin: 10% auto;
+    position: relative;
+    color: rgba(255, 255, 255, 0.835);
+}
+
+.modal h2 a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800px;
+}
+
+.modal-img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#miModal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
